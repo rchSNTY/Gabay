@@ -1,0 +1,204 @@
+.auth-page {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 483px;
+  background: #eef5f8;
+}
+
+.auth-visual,
+.signup-visual {
+  min-height: 100svh;
+  overflow: hidden;
+  background: #d7d7d7;
+}
+
+.auth-visual img,
+.signup-visual img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  filter: opacity(0.58) saturate(0.85);
+}
+
+.auth-card {
+  align-self: center;
+  min-height: 1050px;
+  padding: 48px 60px;
+  background: linear-gradient(145deg, #fff 0%, #fbfdfe 100%);
+  border: 1px solid #d8e6ed;
+  border-right: 0;
+  border-radius: 28px 0 0 28px;
+  box-shadow: -18px 0 45px rgba(27, 67, 87, 0.22);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+}
+
+.brand-logos,
+.signup-brand-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 126px;
+  margin-bottom: 24px;
+}
+
+.brand-logos img,
+.signup-brand-logos img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.brand-logos .gabay-logo,
+.signup-brand-logos .signup-gabay-logo {
+  width: 126px;
+  height: 126px;
+}
+
+.auth-card h1 {
+  margin: 0 0 42px;
+  color: #080808;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label {
+  margin-top: 24px;
+  color: #55707d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px 4px 11px;
+  border: 0;
+  border-bottom: 1px solid #111;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: #111;
+  font: inherit;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.auth-card input:focus {
+  border-bottom: 2px solid #5797bd;
+}
+
+.forgot-link {
+  align-self: flex-end;
+  margin-top: 12px;
+  color: #5797bd;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.primary-button,
+.google-button {
+  align-self: center;
+  cursor: pointer;
+  font: inherit;
+}
+
+.primary-button {
+  width: 150px;
+  margin-top: 28px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #78c5ee, #529ed0);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(82, 158, 208, 0.3);
+}
+
+.primary-button:hover,
+.signup-primary-button:hover {
+  background: linear-gradient(135deg, #67b7e3, #428fbe);
+}
+
+.divider {
+  height: 1px;
+  margin: 30px 0 22px;
+  background: #cbd9df;
+}
+
+.google-button,
+.signup-google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 220px;
+  padding: 11px 16px;
+  border: 1px solid #c5d3d9;
+  border-radius: 24px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(27, 67, 87, 0.08);
+}
+
+.google-icon,
+.signup-google-icon {
+  color: #4285f4;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.switch-text {
+  margin: 36px 0 0;
+  text-align: center;
+  color: #55707d;
+  font-size: 14px;
+}
+
+.text-button,
+.signup-text-button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #5797bd;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .auth-page {
+    display: block;
+    padding: 24px 16px;
+    background: #e7f0f4;
+  }
+
+  .auth-visual {
+    display: none;
+  }
+
+  .auth-card {
+    min-height: auto;
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    border: 1px solid #d8e6ed;
+    border-radius: 24px;
+    box-shadow: 0 14px 34px rgba(27, 67, 87, 0.18);
+  }
+}

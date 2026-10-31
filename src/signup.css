@@ -1,0 +1,159 @@
+.signup-page {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 483px;
+  background: #eef5f8;
+}
+
+.signup-card {
+  align-self: center;
+  min-height: 1050px;
+  padding: 48px 60px;
+  background: linear-gradient(145deg, #fff 0%, #fbfdfe 100%);
+  border: 1px solid #d8e6ed;
+  border-right: 0;
+  border-radius: 28px 0 0 28px;
+  box-shadow: -18px 0 45px rgba(27, 67, 87, 0.22);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
+}
+
+.signup-brand-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 126px;
+  margin-bottom: 24px;
+}
+
+.signup-brand-logos img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.signup-brand-logos .signup-gabay-logo {
+  width: 126px;
+  height: 126px;
+}
+
+.signup-card h1 {
+  margin: 0 0 34px;
+  color: #080808;
+  font-size: 42px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.signup-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-card label {
+  margin-top: 21px;
+  color: #55707d;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.signup-card input {
+  width: 100%;
+  padding: 12px 4px 11px;
+  border: 0;
+  border-bottom: 1px solid #111;
+  outline: none;
+  background: transparent;
+  color: #111;
+  font: inherit;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.signup-card input:focus {
+  border-bottom: 2px solid #5797bd;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 50px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #5797bd;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.signup-primary-button {
+  align-self: center;
+  width: 150px;
+  margin-top: 32px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #78c5ee, #529ed0);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(82, 158, 208, 0.3);
+}
+
+.signup-or {
+  margin: 14px 0;
+  text-align: center;
+  color: #55707d;
+  font-size: 14px;
+}
+
+.signup-google-button {
+  align-self: center;
+}
+
+.signup-switch-text {
+  margin: 36px 0 0;
+  text-align: center;
+  color: #55707d;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .signup-page {
+    display: block;
+    padding: 24px 16px;
+    background: #e7f0f4;
+  }
+
+  .signup-visual {
+    display: none;
+  }
+
+  .signup-card {
+    min-height: auto;
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    border: 1px solid #d8e6ed;
+    border-radius: 24px;
+    box-shadow: 0 14px 34px rgba(27, 67, 87, 0.18);
+  }
+}
